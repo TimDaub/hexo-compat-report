@@ -32,6 +32,8 @@
   "dependencies": {
     "ejs": "2.6.1",
     "hexo-fs": "^3.0.1",
-    "mdn-browser-compat-data": "^1.0.19"
+    "mdn-browser-compat-data": "^1.0.19",
+    "node-sass": "^4.14.1",
+    "sass-inline-svg": "^1.2.3"
   }
 }

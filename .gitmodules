@@ -1,3 +1,9 @@
 [submodule "kumascript"]
 	path = kumascript
 	url = git@github.com:mdn/kumascript.git
+[submodule "stumptown-renderer"]
+	path = stumptown-renderer
+	url = git@github.com:mdn/stumptown-renderer.git
+[submodule "kuma"]
+	path = kuma
+	url = git@github.com:mdn/kuma.git
