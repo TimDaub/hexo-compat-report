@@ -1,0 +1,3 @@
+[submodule "kumascript"]
+	path = kumascript
+	url = git@github.com:mdn/kumascript.git

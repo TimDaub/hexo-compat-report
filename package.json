@@ -1,0 +1,37 @@
+{
+  "name": "hexo-compat-report",
+  "version": "0.0.1",
+  "description": "A widget to include in your hexo report for web technology compatbility reports.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd ./kumascript && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimDaub/hexo-compat-report.git"
+  },
+  "keywords": [
+    "hexo",
+    "blog",
+    "blogging",
+    "compatibility",
+    "browsers",
+    "html5"
+  ],
+  "author": "Tim Daubenschütz <tim@daubenschuetz.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TimDaub/hexo-compat-report/issues"
+  },
+  "homepage": "https://github.com/TimDaub/hexo-compat-report#readme",
+  "dependencies": {
+    "ejs": "2.6.1",
+    "hexo-fs": "^3.0.1",
+    "mdn-browser-compat-data": "^1.0.19"
+  }
+}
