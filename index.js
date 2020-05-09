@@ -6,6 +6,7 @@ const config = require("./kumascript/src/config");
 const sass = require("node-sass");
 const path = require("path");
 const inliner = require("sass-inline-svg");
+const _escape = require("lodash.escape");
 
 const paths = {
   styles: [
@@ -27,37 +28,48 @@ hexo.extend.tag.register(
     });
     // NOTE: For some reason, err is an array.
     if (err.length) throw new Error("Compatibility table rendering failed");
-    const style = sass.renderSync({
+    const structure = sass.renderSync({
       file: path.normalize(paths.styles[0]),
       outputStyle: "compressed"
     });
 
-    const style2 = sass.renderSync({
+    const aestetics = sass.renderSync({
       file: path.normalize(paths.styles[1]),
-      outputStyle: "compressed",
       functions: {
-        // NOTE: We convert all svgs to inline svgs
         url: inliner(path.normalize(paths.icons))
-      }
+      },
+      outputStyle: "compressed"
     });
     const doc = `
 			<!doctype html>
 				<head>
           <base href="https://developer.mozilla.org">
-          <style>body { background-color: "white"; font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif }</style>
-					<style>${style.css.toString()}</style>
-					<style>${style2.css.toString()}</style>
+					<style>
+            ${structure.css.toString()}
+          </style>
+					<style>
+            ${aestetics.css.toString()}
+          </style>
+					<style>
+             body {
+               font-family: Arial;
+             }
+             .bc-table {
+               background-color: white;
+             }
+          </style>
 				</head>
 				<body>
 					${table}
 				</body>
 			</html>`;
     return `
-      <iframe src="about:blank">
-        <body>
-          <p>hello</p>
-        </body>
-      </iframe>
+        <iframe
+          frameborder="0"
+          seamless
+          style="background-color:white;height:550px;transform:scale(0.5);width:200%;margin: -15% 0 -15% -50%;"
+          srcdoc="${_escape(doc)}"></iframe>
+      </div>
     `;
   },
   { async: true }
