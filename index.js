@@ -68,7 +68,7 @@ hexo.extend.tag.register(
           frameborder="0"
           sandbox="allow-top-navigation"
           seamless
-          style="background-color:white;height:550px;transform:scale(0.5);width:200%;margin: -15% 0 -15% -50%;"
+          style="background-color:white;height:415px;transform:scale(0.5);width:200%;margin: -15% 0 -15% -50%;"
           srcdoc="${_escape(doc)}"></iframe>
       </div>
     `;
