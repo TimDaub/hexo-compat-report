@@ -40,6 +40,10 @@ merge PRs optimistically.
 
 ## Changelog
 
+### 0.1.0
+
+- Upgrade `mdn-browser-compat-data` to `@mdn` namespace
+
 ### 0.0.2
 
 - Include installation guidance into `README.md`
