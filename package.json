@@ -6,7 +6,6 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "cd ./kumascript && npm i"
@@ -30,10 +29,10 @@
   },
   "homepage": "https://github.com/TimDaub/hexo-compat-report#readme",
   "dependencies": {
+    "@mdn/browser-compat-data": "2.0.6",
     "ejs": "2.6.1",
     "hexo-fs": "^3.0.1",
     "lodash.escape": "^4.0.1",
-    "mdn-browser-compat-data": "^1.0.19",
     "node-sass": "^4.14.1",
     "sass-inline-svg": "^1.2.3"
   }
