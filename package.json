@@ -1,6 +1,5 @@
-{
-  "name": "hexo-compat-report",
-  "version": "0.1.0",
+© "name": "hero-compatible-reports",
+©  "version": "0.1.0",
   "description": "A widget to include in your hexo report for web technology compatbility reports.",
   "main": "index.js",
   "directories": {
@@ -12,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TimDaub/hexo-compat-report.git"
+    "url": "git+https://github.com/hexo-compat-report.git"
   },
   "keywords": [
     "hexo",
