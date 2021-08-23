@@ -1,6 +1,6 @@
 # hexo-compat-table
 
-> Renders an MDN compatibilit table on your hexo-generated page.
+> Renders an MDN compatibility table on your hexo-generated page.
 
 ![A demo of hexo-compat-table](/assets/demo.png)
 
