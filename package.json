@@ -33,7 +33,7 @@
     "ejs": "2.6.1",
     "hexo-fs": "3.0.1",
     "lodash.escape": "4.0.1",
-    "node-sass": "4.14.1",
+    "node-sass": "7.0.0",
     "sass-inline-svg": "1.2.3"
   }
 }
